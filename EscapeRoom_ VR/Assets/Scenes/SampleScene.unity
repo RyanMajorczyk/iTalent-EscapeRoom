@@ -4182,6 +4182,7 @@ Prefab:
 Transform:
   m_CorrespondingSourceObject: {fileID: 458662, guid: facf14ae9ce68b7479827bcf72fba835,
     type: 2}
+<<<<<<< HEAD
   m_PrefabInternal: {fileID: 1486343393}
 --- !u!1001 &1522845349
 Prefab:
@@ -4235,6 +4236,10 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 1522845349}
 --- !u!1001 &1609205337
+=======
+  m_PrefabInternal: {fileID: 1609205337}
+--- !u!1001 &1741311511
+>>>>>>> parent of 9347b4a... Merge branch 'master' of https://github.com/RyanMajorczyk/iTalent-EscapeRoom
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
