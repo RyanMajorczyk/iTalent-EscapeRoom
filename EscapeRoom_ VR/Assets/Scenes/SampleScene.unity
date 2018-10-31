@@ -4268,6 +4268,28 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88075a54c7fb1484ba25db394b612917, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1225890407 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000014042078020, guid: 88075a54c7fb1484ba25db394b612917,
+    type: 2}
+  m_PrefabInternal: {fileID: 1225890406}
+--- !u!114 &1225890408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1225890407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4b39c719d1f4f946ab71f29fa25c972, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  light1: {fileID: 780453064}
+  light2: {fileID: 386660311}
+  light3: {fileID: 318869109}
+  lamp1: {fileID: 551303116}
+  lamp2: {fileID: 1434422120}
+  lamp3: {fileID: 822707054}
 --- !u!1001 &1226284904
 Prefab:
   m_ObjectHideFlags: 0
