@@ -32,6 +32,8 @@ namespace Valve.VR.InteractionSystem
         [Tooltip("The range of motion to set on the skeleton. None for no change.")]
         public SkeletalMotionRangeChange setRangeOfMotionOnPickup = SkeletalMotionRangeChange.None;
 
+        public GameObject button;
+
         public delegate void OnAttachedToHandDelegate( Hand hand );
 		public delegate void OnDetachedFromHandDelegate( Hand hand );
 
@@ -241,7 +243,7 @@ namespace Valve.VR.InteractionSystem
 			{
 				onAttachedToHand.Invoke( hand );
 			}
-
+            button.gameObject.transform.localScale += new Vector3(0, 50, 0);
             attachedToHand = hand;
         }
 
