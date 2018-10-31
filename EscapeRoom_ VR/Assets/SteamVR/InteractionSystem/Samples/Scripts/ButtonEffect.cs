@@ -13,6 +13,7 @@ namespace Valve.VR.InteractionSystem.Sample
         public Light light2;
         public Light light3;
         public Light light4;
+        public Material material;
 
         public void OnButtonDown(Hand fromHand)
         {
@@ -20,6 +21,14 @@ namespace Valve.VR.InteractionSystem.Sample
             light2.enabled = !light2.enabled;
             light3.enabled = !light3.enabled;
             light4.enabled = !light4.enabled;
+            if (!light1.enabled)
+            {
+                material.color = Color.gray;
+            }
+            else
+            {
+                material.color = Color.white;
+            }
             ColorSelf(Color.cyan);
             fromHand.TriggerHapticPulse(1000);
         }
