@@ -2312,6 +2312,23 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 438334, guid: f8ca8b584672e2c44b786aedd156b7eb,
     type: 2}
   m_PrefabInternal: {fileID: 690658506}
+--- !u!1 &696354607 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 126042, guid: 815d7be770ecebf4fab949961c955692,
+    type: 2}
+  m_PrefabInternal: {fileID: 553094656}
+--- !u!114 &696354608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 696354607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aaa75fe55496d264e9bc7699e67a6cab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightSwitch: {fileID: 822707054}
 --- !u!1 &709120078
 GameObject:
   m_ObjectHideFlags: 0
@@ -2755,6 +2772,11 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88075a54c7fb1484ba25db394b612917, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &822707054 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 117088, guid: 947e113398f058643a47464fff50cae1,
+    type: 2}
+  m_PrefabInternal: {fileID: 318869107}
 --- !u!1001 &838016777
 Prefab:
   m_ObjectHideFlags: 0
