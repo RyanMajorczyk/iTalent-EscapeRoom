@@ -2,24 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Valve.VR.InteractionSystem;
 
 public class KeyPadButtonClicked : MonoBehaviour
 {
-    public Button myButton;
+    private static int lastButtonClicked;
 
     public GameObject button;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
+    public int KeyValue;
 
-    // Update is called once per frame
-	void Update () {
-	}
-
-    public KeyPadButtonClicked()
+    public void OnButtonDown(Hand fromHand)
     {
+        button.gameObject.transform.localScale += new Vector3(1, 1, 1);
+    }
 
+    public void OnButtonUp(Hand fromHand)
+    {
+       
     }
 }
