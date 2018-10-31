@@ -9,11 +9,17 @@ namespace Valve.VR.InteractionSystem.Sample
 {
     public class ButtonEffect : MonoBehaviour
     {
-        public GameObject lightSwitch;
+        public Light light1;
+        public Light light2;
+        public Light light3;
+        public Light light4;
 
         public void OnButtonDown(Hand fromHand)
         {
-            lightSwitch.SetActive(!lightSwitch.activeSelf);
+            light1.enabled = !light1.enabled;
+            light2.enabled = !light2.enabled;
+            light3.enabled = !light3.enabled;
+            light4.enabled = !light4.enabled;
             ColorSelf(Color.cyan);
             fromHand.TriggerHapticPulse(1000);
         }
