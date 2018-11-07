@@ -4352,6 +4352,11 @@ Prefab:
       propertyPath: lamp3
       value: 
       objectReference: {fileID: 822707054}
+    - target: {fileID: 114000013679779266, guid: 88075a54c7fb1484ba25db394b612917,
+        type: 2}
+      propertyPath: phoneNumber
+      value: 
+      objectReference: {fileID: 511242074}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88075a54c7fb1484ba25db394b612917, type: 2}
   m_IsPrefabAsset: 0
