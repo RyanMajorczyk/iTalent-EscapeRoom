@@ -11,6 +11,7 @@ namespace Valve.VR.InteractionSystem.Sample
         public Light light1;
         public Light light2;
         public Light light3;
+        public GameObject reflectionProbes;
         public GameObject lamp1;
         public GameObject lamp2;
         public GameObject lamp3;
@@ -31,8 +32,9 @@ namespace Valve.VR.InteractionSystem.Sample
                     lamp2.GetComponent<MeshRenderer>().material.DisableKeyword("_EMISSION");
                     //lamp3.GetComponent<MeshRenderer>().material.DisableKeyword("_EMISSION");
                     originalColor = lamp3.GetComponent<MeshRenderer>().material.GetColor("_EmissionColor");
-                    lamp3.GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", Color.blue);
+                    lamp3.GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", Color.HSVToRGB(259, 46, 54.5f));
                     phoneNumber.SetActive(true);
+                    reflectionProbes.SetActive(false);
                 }
                 else
                 {
@@ -41,6 +43,7 @@ namespace Valve.VR.InteractionSystem.Sample
                     //lamp3.GetComponent<MeshRenderer>().material.EnableKeyword("_EMISSION");
                     lamp3.GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", originalColor);
                     phoneNumber.SetActive(false);
+                    reflectionProbes.SetActive(true);
                 }
             }
 
