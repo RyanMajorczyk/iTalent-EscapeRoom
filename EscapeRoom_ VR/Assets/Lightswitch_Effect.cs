@@ -23,25 +23,25 @@ namespace Valve.VR.InteractionSystem.Sample
         {
             if (light1 != null)
             {
-                light1.enabled = !light1.enabled;
+                //light1.enabled = !light1.enabled;
                 light2.enabled = !light2.enabled;
                 light3.enabled = !light3.enabled;
-                if (!light1.enabled)
+                if (!light2.enabled)
                 {
-                    lamp1.GetComponent<MeshRenderer>().material.DisableKeyword("_EMISSION");
+                    light1.color = new Color32(95, 75, 139, 255);
                     lamp2.GetComponent<MeshRenderer>().material.DisableKeyword("_EMISSION");
-                    //lamp3.GetComponent<MeshRenderer>().material.DisableKeyword("_EMISSION");
+                    lamp3.GetComponent<MeshRenderer>().material.DisableKeyword("_EMISSION");
                     originalColor = lamp3.GetComponent<MeshRenderer>().material.GetColor("_EmissionColor");
-                    lamp3.GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", Color.HSVToRGB(259, 46, 54.5f));
+                    lamp1.GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", new Color32(95, 75, 139, 255));
                     phoneNumber.SetActive(true);
                     reflectionProbes.SetActive(false);
                 }
                 else
                 {
-                    lamp1.GetComponent<MeshRenderer>().material.EnableKeyword("_EMISSION");
+                    light1.color = new Color32(229, 250, 255, 255);
                     lamp2.GetComponent<MeshRenderer>().material.EnableKeyword("_EMISSION");
-                    //lamp3.GetComponent<MeshRenderer>().material.EnableKeyword("_EMISSION");
-                    lamp3.GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", originalColor);
+                    lamp3.GetComponent<MeshRenderer>().material.EnableKeyword("_EMISSION");
+                    lamp1.GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", originalColor);
                     phoneNumber.SetActive(false);
                     reflectionProbes.SetActive(true);
                 }
