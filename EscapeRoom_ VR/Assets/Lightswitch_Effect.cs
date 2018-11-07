@@ -16,6 +16,8 @@ namespace Valve.VR.InteractionSystem.Sample
         public GameObject lamp3;
         public GameObject phoneNumber;
 
+        private Color originalColor;
+
         public void OnButtonDown(Hand fromHand)
         {
             if (light1 != null)
@@ -27,14 +29,17 @@ namespace Valve.VR.InteractionSystem.Sample
                 {
                     lamp1.GetComponent<MeshRenderer>().material.DisableKeyword("_EMISSION");
                     lamp2.GetComponent<MeshRenderer>().material.DisableKeyword("_EMISSION");
-                    lamp3.GetComponent<MeshRenderer>().material.DisableKeyword("_EMISSION");
+                    //lamp3.GetComponent<MeshRenderer>().material.DisableKeyword("_EMISSION");
+                    originalColor = lamp3.GetComponent<MeshRenderer>().material.GetColor("_EmissionColor");
+                    lamp3.GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", Color.blue);
                     phoneNumber.SetActive(true);
                 }
                 else
                 {
                     lamp1.GetComponent<MeshRenderer>().material.EnableKeyword("_EMISSION");
                     lamp2.GetComponent<MeshRenderer>().material.EnableKeyword("_EMISSION");
-                    lamp3.GetComponent<MeshRenderer>().material.EnableKeyword("_EMISSION");
+                    //lamp3.GetComponent<MeshRenderer>().material.EnableKeyword("_EMISSION");
+                    lamp3.GetComponent<MeshRenderer>().material.SetColor("_EmissionColor", originalColor);
                     phoneNumber.SetActive(false);
                 }
             }
