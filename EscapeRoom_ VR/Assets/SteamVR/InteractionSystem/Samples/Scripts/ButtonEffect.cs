@@ -15,6 +15,7 @@ namespace Valve.VR.InteractionSystem.Sample
         public GameObject lamp1;
         public GameObject lamp2;
         public GameObject lamp3;
+        public GameObject phoneNumber;
 
         public void OnButtonDown(Hand fromHand)
         {
@@ -28,12 +29,14 @@ namespace Valve.VR.InteractionSystem.Sample
                     lamp1.GetComponent<MeshRenderer>().material.DisableKeyword("_EMISSION");
                     lamp2.GetComponent<MeshRenderer>().material.DisableKeyword("_EMISSION");
                     lamp3.GetComponent<MeshRenderer>().material.DisableKeyword("_EMISSION");
+                    phoneNumber.SetActive(true);
                 }
                 else
                 {
                     lamp1.GetComponent<MeshRenderer>().material.EnableKeyword("_EMISSION");
                     lamp2.GetComponent<MeshRenderer>().material.EnableKeyword("_EMISSION");
                     lamp3.GetComponent<MeshRenderer>().material.EnableKeyword("_EMISSION");
+                    phoneNumber.SetActive(false);
                 }
             }
             
