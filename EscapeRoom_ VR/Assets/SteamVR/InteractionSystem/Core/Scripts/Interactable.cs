@@ -32,7 +32,12 @@ namespace Valve.VR.InteractionSystem
         [Tooltip("The range of motion to set on the skeleton. None for no change.")]
         public SkeletalMotionRangeChange setRangeOfMotionOnPickup = SkeletalMotionRangeChange.None;
 
-        public GameObject button;
+        // Keypad values
+        public GameObject KeyPadButton;
+        public int KeyValue;
+        public GameObject KeyPadScreen;
+        private static string _codeTyped;
+        private readonly string _rightCode = "2568";
 
         public delegate void OnAttachedToHandDelegate( Hand hand );
 		public delegate void OnDetachedFromHandDelegate( Hand hand );
@@ -243,11 +248,49 @@ namespace Valve.VR.InteractionSystem
 			{
 				onAttachedToHand.Invoke( hand );
 			}
-            button.gameObject.transform.localScale += new Vector3(0, 50, 0);
+            
             attachedToHand = hand;
+
+            if (KeyPadButton != null) 
+            {
+                switch (KeyValue)
+                {
+                    case -1:
+                        _codeTyped = string.Empty;
+                        break;
+                    case -2:
+                        CheckIfCodeIsCorrect();
+                        break;
+                    default:
+                        _codeTyped += KeyValue;
+                        break;
+                }
+                UpdateKeyPadScreen();
+            }
         }
 
-		private void OnDetachedFromHand( Hand hand )
+        private void UpdateKeyPadScreen()
+        {
+            var textMesh = KeyPadScreen.GetComponent<TextMesh>();
+            textMesh.text = _codeTyped;
+        }
+
+        private void CheckIfCodeIsCorrect()
+        {
+            if (_rightCode.Equals(_codeTyped))
+            {
+                var cabinetDoor = GameObject.Find("cabinet_door_to_open");
+                cabinetDoor.transform.Rotate(0,90,0);
+            }
+            else
+            {
+                _codeTyped = string.Empty;
+                UpdateKeyPadScreen();
+            }
+            
+        }
+
+        private void OnDetachedFromHand( Hand hand )
         {
             if (activateActionSetOnAttach != null)
             {
