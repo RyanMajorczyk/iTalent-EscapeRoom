@@ -8,25 +8,35 @@ namespace Valve.VR.InteractionSystem.Sample
     {
         public string value;
 
-        public static string insertedPhoneNumber = "";
+        private static string insertedPhoneNumber = "";
+
+        public string correctPhoneNumber = "0474265348";
 
         public void OnButtonDown(Hand fromHand)
         {
-            if (value.Equals("-1"))
+            if (insertedPhoneNumber.Length < 10)
             {
-                //Check if number is correct and call cellphone
+                if (value.Equals("-1"))
+                {
+                    if (insertedPhoneNumber.Equals(correctPhoneNumber))
+                    {
+                        //Make phone call
+                    }
+
+                }
+                else if (value.Equals("-2"))
+                {
+                    insertedPhoneNumber = "";
+                    Debug.Log("Cancel button Number is: " + insertedPhoneNumber);
+                }
+                else
+                {
+                    insertedPhoneNumber += value;
+                    Debug.Log(insertedPhoneNumber);
+                }
+                Debug.Log("Button pressed " + value);
             }
-            else if (value.Equals("-2"))
-            {
-                insertedPhoneNumber = "";
-                Debug.Log("Cancel button Number is: " + insertedPhoneNumber);
-            }
-            else
-            {
-                insertedPhoneNumber += value;
-                Debug.Log(insertedPhoneNumber);
-            }
-            Debug.Log("Button pressed " + value);
+            
         }
     }
 }

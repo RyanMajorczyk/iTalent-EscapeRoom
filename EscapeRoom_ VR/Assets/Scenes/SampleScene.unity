@@ -153,15 +153,15 @@ Transform:
 --- !u!114 &13986904
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 114858487550978474, guid: 2f23ad0a25b4be74f8c22567922d93b2,
-    type: 2}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 13986902}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fdc6e48706c13fa4a8f807ff0f16e9de, type: 3}
+  m_Script: {fileID: 11500000, guid: 1a56b8a915f3723469ae9ea3c213499e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  value: 0
 --- !u!114 &13986905
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -197,7 +197,7 @@ MonoBehaviour:
   onButtonUp:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 13986904}
+      - m_Target: {fileID: 0}
         m_MethodName: OnButtonUp
         m_Mode: 0
         m_Arguments:
@@ -236,7 +236,9 @@ MonoBehaviour:
   hideControllerOnAttach: 0
   handAnimationOnPickup: 0
   setRangeOfMotionOnPickup: -1
-  button: {fileID: 0}
+  KeyPadButton: {fileID: 0}
+  KeyValue: 0
+  KeyPadScreen: {fileID: 0}
   useHandObjectAttachmentPoint: 1
   handFollowTransform: {fileID: 0}
   handFollowTransformPosition: 1
@@ -1149,15 +1151,15 @@ Transform:
 --- !u!114 &196917145
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 114447594739502374, guid: 2f23ad0a25b4be74f8c22567922d93b2,
-    type: 2}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 196917143}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fdc6e48706c13fa4a8f807ff0f16e9de, type: 3}
+  m_Script: {fileID: 11500000, guid: 1a56b8a915f3723469ae9ea3c213499e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  value: 9
 --- !u!114 &196917146
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1193,7 +1195,7 @@ MonoBehaviour:
   onButtonUp:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 196917145}
+      - m_Target: {fileID: 0}
         m_MethodName: OnButtonUp
         m_Mode: 0
         m_Arguments:
@@ -1232,7 +1234,9 @@ MonoBehaviour:
   hideControllerOnAttach: 0
   handAnimationOnPickup: 0
   setRangeOfMotionOnPickup: -1
-  button: {fileID: 0}
+  KeyPadButton: {fileID: 0}
+  KeyValue: 0
+  KeyPadScreen: {fileID: 0}
   useHandObjectAttachmentPoint: 1
   handFollowTransform: {fileID: 0}
   handFollowTransformPosition: 1
@@ -1346,15 +1350,15 @@ Transform:
 --- !u!114 &204641665
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 114757069361838312, guid: 2f23ad0a25b4be74f8c22567922d93b2,
-    type: 2}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 204641663}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fdc6e48706c13fa4a8f807ff0f16e9de, type: 3}
+  m_Script: {fileID: 11500000, guid: 1a56b8a915f3723469ae9ea3c213499e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  value: 4
 --- !u!114 &204641666
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1390,7 +1394,7 @@ MonoBehaviour:
   onButtonUp:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 204641665}
+      - m_Target: {fileID: 0}
         m_MethodName: OnButtonUp
         m_Mode: 0
         m_Arguments:
@@ -1429,7 +1433,9 @@ MonoBehaviour:
   hideControllerOnAttach: 0
   handAnimationOnPickup: 0
   setRangeOfMotionOnPickup: -1
-  button: {fileID: 0}
+  KeyPadButton: {fileID: 0}
+  KeyValue: 0
+  KeyPadScreen: {fileID: 0}
   useHandObjectAttachmentPoint: 1
   handFollowTransform: {fileID: 0}
   handFollowTransformPosition: 1
@@ -1497,15 +1503,15 @@ Transform:
 --- !u!114 &235921713
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 114514441612648258, guid: 2f23ad0a25b4be74f8c22567922d93b2,
-    type: 2}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 235921711}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fdc6e48706c13fa4a8f807ff0f16e9de, type: 3}
+  m_Script: {fileID: 11500000, guid: 1a56b8a915f3723469ae9ea3c213499e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  value: 6
 --- !u!114 &235921714
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1541,7 +1547,7 @@ MonoBehaviour:
   onButtonUp:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 235921713}
+      - m_Target: {fileID: 0}
         m_MethodName: OnButtonUp
         m_Mode: 0
         m_Arguments:
@@ -1580,7 +1586,9 @@ MonoBehaviour:
   hideControllerOnAttach: 0
   handAnimationOnPickup: 0
   setRangeOfMotionOnPickup: -1
-  button: {fileID: 0}
+  KeyPadButton: {fileID: 0}
+  KeyValue: 0
+  KeyPadScreen: {fileID: 0}
   useHandObjectAttachmentPoint: 1
   handFollowTransform: {fileID: 0}
   handFollowTransformPosition: 1
@@ -2666,15 +2674,15 @@ Transform:
 --- !u!114 &407044124
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 114447594739502374, guid: 2f23ad0a25b4be74f8c22567922d93b2,
-    type: 2}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 407044122}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fdc6e48706c13fa4a8f807ff0f16e9de, type: 3}
+  m_Script: {fileID: 11500000, guid: 1a56b8a915f3723469ae9ea3c213499e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  value: -1
 --- !u!114 &407044125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2710,7 +2718,7 @@ MonoBehaviour:
   onButtonUp:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 407044124}
+      - m_Target: {fileID: 0}
         m_MethodName: OnButtonUp
         m_Mode: 0
         m_Arguments:
@@ -2749,7 +2757,9 @@ MonoBehaviour:
   hideControllerOnAttach: 0
   handAnimationOnPickup: 0
   setRangeOfMotionOnPickup: -1
-  button: {fileID: 0}
+  KeyPadButton: {fileID: 0}
+  KeyValue: 0
+  KeyPadScreen: {fileID: 0}
   useHandObjectAttachmentPoint: 1
   handFollowTransform: {fileID: 0}
   handFollowTransformPosition: 1
@@ -5176,15 +5186,15 @@ Transform:
 --- !u!114 &913416837
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 114098908399158124, guid: 2f23ad0a25b4be74f8c22567922d93b2,
-    type: 2}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 913416835}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fdc6e48706c13fa4a8f807ff0f16e9de, type: 3}
+  m_Script: {fileID: 11500000, guid: 1a56b8a915f3723469ae9ea3c213499e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  value: 3
 --- !u!114 &913416838
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5220,7 +5230,7 @@ MonoBehaviour:
   onButtonUp:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 913416837}
+      - m_Target: {fileID: 0}
         m_MethodName: OnButtonUp
         m_Mode: 0
         m_Arguments:
@@ -5259,7 +5269,9 @@ MonoBehaviour:
   hideControllerOnAttach: 0
   handAnimationOnPickup: 0
   setRangeOfMotionOnPickup: -1
-  button: {fileID: 0}
+  KeyPadButton: {fileID: 0}
+  KeyValue: 0
+  KeyPadScreen: {fileID: 0}
   useHandObjectAttachmentPoint: 1
   handFollowTransform: {fileID: 0}
   handFollowTransformPosition: 1
@@ -5787,15 +5799,15 @@ Transform:
 --- !u!114 &1042951460
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 114571104265498462, guid: 2f23ad0a25b4be74f8c22567922d93b2,
-    type: 2}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1042951458}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fdc6e48706c13fa4a8f807ff0f16e9de, type: 3}
+  m_Script: {fileID: 11500000, guid: 1a56b8a915f3723469ae9ea3c213499e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  value: 2
 --- !u!114 &1042951461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5831,7 +5843,7 @@ MonoBehaviour:
   onButtonUp:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1042951460}
+      - m_Target: {fileID: 0}
         m_MethodName: OnButtonUp
         m_Mode: 0
         m_Arguments:
@@ -5870,7 +5882,9 @@ MonoBehaviour:
   hideControllerOnAttach: 0
   handAnimationOnPickup: 0
   setRangeOfMotionOnPickup: -1
-  button: {fileID: 0}
+  KeyPadButton: {fileID: 0}
+  KeyValue: 0
+  KeyPadScreen: {fileID: 0}
   useHandObjectAttachmentPoint: 1
   handFollowTransform: {fileID: 0}
   handFollowTransformPosition: 1
@@ -5938,15 +5952,15 @@ Transform:
 --- !u!114 &1043364910
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 114858487550978474, guid: 2f23ad0a25b4be74f8c22567922d93b2,
-    type: 2}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1043364908}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fdc6e48706c13fa4a8f807ff0f16e9de, type: 3}
+  m_Script: {fileID: 11500000, guid: 1a56b8a915f3723469ae9ea3c213499e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  value: 8
 --- !u!114 &1043364911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5982,7 +5996,7 @@ MonoBehaviour:
   onButtonUp:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1043364910}
+      - m_Target: {fileID: 0}
         m_MethodName: OnButtonUp
         m_Mode: 0
         m_Arguments:
@@ -6021,7 +6035,9 @@ MonoBehaviour:
   hideControllerOnAttach: 0
   handAnimationOnPickup: 0
   setRangeOfMotionOnPickup: -1
-  button: {fileID: 0}
+  KeyPadButton: {fileID: 0}
+  KeyValue: 0
+  KeyPadScreen: {fileID: 0}
   useHandObjectAttachmentPoint: 1
   handFollowTransform: {fileID: 0}
   handFollowTransformPosition: 1
@@ -7249,15 +7265,15 @@ Transform:
 --- !u!114 &1240201529
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 114122664060864936, guid: 2f23ad0a25b4be74f8c22567922d93b2,
-    type: 2}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1240201527}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fdc6e48706c13fa4a8f807ff0f16e9de, type: 3}
+  m_Script: {fileID: 11500000, guid: 1a56b8a915f3723469ae9ea3c213499e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  value: -2
 --- !u!114 &1240201530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7293,7 +7309,7 @@ MonoBehaviour:
   onButtonUp:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1240201529}
+      - m_Target: {fileID: 0}
         m_MethodName: OnButtonUp
         m_Mode: 0
         m_Arguments:
@@ -7332,7 +7348,9 @@ MonoBehaviour:
   hideControllerOnAttach: 0
   handAnimationOnPickup: 0
   setRangeOfMotionOnPickup: -1
-  button: {fileID: 0}
+  KeyPadButton: {fileID: 0}
+  KeyValue: 0
+  KeyPadScreen: {fileID: 0}
   useHandObjectAttachmentPoint: 1
   handFollowTransform: {fileID: 0}
   handFollowTransformPosition: 1
@@ -8679,15 +8697,15 @@ Transform:
 --- !u!114 &1683641124
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 114122664060864936, guid: 2f23ad0a25b4be74f8c22567922d93b2,
-    type: 2}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1683641122}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fdc6e48706c13fa4a8f807ff0f16e9de, type: 3}
+  m_Script: {fileID: 11500000, guid: 1a56b8a915f3723469ae9ea3c213499e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  value: 7
 --- !u!114 &1683641125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8723,7 +8741,7 @@ MonoBehaviour:
   onButtonUp:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1683641124}
+      - m_Target: {fileID: 0}
         m_MethodName: OnButtonUp
         m_Mode: 0
         m_Arguments:
@@ -8762,7 +8780,9 @@ MonoBehaviour:
   hideControllerOnAttach: 0
   handAnimationOnPickup: 0
   setRangeOfMotionOnPickup: -1
-  button: {fileID: 0}
+  KeyPadButton: {fileID: 0}
+  KeyValue: 0
+  KeyPadScreen: {fileID: 0}
   useHandObjectAttachmentPoint: 1
   handFollowTransform: {fileID: 0}
   handFollowTransformPosition: 1
@@ -9015,7 +9035,9 @@ MonoBehaviour:
   hideControllerOnAttach: 0
   handAnimationOnPickup: 0
   setRangeOfMotionOnPickup: -1
-  button: {fileID: 1771344518}
+  KeyPadButton: {fileID: 0}
+  KeyValue: 0
+  KeyPadScreen: {fileID: 0}
   useHandObjectAttachmentPoint: 1
   handFollowTransform: {fileID: 0}
   handFollowTransformPosition: 1
@@ -9175,7 +9197,9 @@ MonoBehaviour:
   hideControllerOnAttach: 0
   handAnimationOnPickup: 0
   setRangeOfMotionOnPickup: -1
-  button: {fileID: 0}
+  KeyPadButton: {fileID: 0}
+  KeyValue: 0
+  KeyPadScreen: {fileID: 0}
   useHandObjectAttachmentPoint: 1
   handFollowTransform: {fileID: 0}
   handFollowTransformPosition: 1
@@ -9310,15 +9334,15 @@ Transform:
 --- !u!114 &1801597974
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 114364554596022306, guid: 2f23ad0a25b4be74f8c22567922d93b2,
-    type: 2}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1801597972}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fdc6e48706c13fa4a8f807ff0f16e9de, type: 3}
+  m_Script: {fileID: 11500000, guid: 1a56b8a915f3723469ae9ea3c213499e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  value: 5
 --- !u!114 &1801597975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9354,7 +9378,7 @@ MonoBehaviour:
   onButtonUp:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1801597974}
+      - m_Target: {fileID: 0}
         m_MethodName: OnButtonUp
         m_Mode: 0
         m_Arguments:
@@ -9393,7 +9417,9 @@ MonoBehaviour:
   hideControllerOnAttach: 0
   handAnimationOnPickup: 0
   setRangeOfMotionOnPickup: -1
-  button: {fileID: 0}
+  KeyPadButton: {fileID: 0}
+  KeyValue: 0
+  KeyPadScreen: {fileID: 0}
   useHandObjectAttachmentPoint: 1
   handFollowTransform: {fileID: 0}
   handFollowTransformPosition: 1
