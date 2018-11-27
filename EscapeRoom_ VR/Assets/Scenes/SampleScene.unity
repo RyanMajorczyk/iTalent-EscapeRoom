@@ -162,7 +162,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 0
-  correctPhoneNumber: 0474265348
+  _smartphone: {fileID: 0}
+  _blackScreen: {fileID: 0}
+  _callScreen: {fileID: 0}
 --- !u!114 &13986905
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1161,7 +1163,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 9
-  correctPhoneNumber: 0474265348
+  _smartphone: {fileID: 0}
+  _blackScreen: {fileID: 0}
+  _callScreen: {fileID: 0}
 --- !u!114 &196917146
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1361,7 +1365,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 4
-  correctPhoneNumber: 0474265348
+  _smartphone: {fileID: 0}
+  _blackScreen: {fileID: 0}
+  _callScreen: {fileID: 0}
 --- !u!114 &204641666
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1515,7 +1521,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 6
-  correctPhoneNumber: 0474265348
+  _smartphone: {fileID: 0}
+  _blackScreen: {fileID: 0}
+  _callScreen: {fileID: 0}
 --- !u!114 &235921714
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2687,7 +2695,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: -1
-  correctPhoneNumber: 0474265348
+  _smartphone: {fileID: 0}
+  _blackScreen: {fileID: 0}
+  _callScreen: {fileID: 0}
 --- !u!114 &407044125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3253,7 +3263,7 @@ Transform:
   - {fileID: 1490358221}
   - {fileID: 1750560968}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &551303116 stripped
 GameObject:
@@ -5200,7 +5210,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 3
-  correctPhoneNumber: 0474265348
+  _smartphone: {fileID: 0}
+  _blackScreen: {fileID: 0}
+  _callScreen: {fileID: 0}
 --- !u!114 &913416838
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5814,7 +5826,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 2
-  correctPhoneNumber: 0474265348
+  _smartphone: {fileID: 2120571087}
+  _blackScreen: {fileID: 2100000, guid: d4fc12dc9beafa44e9f614b7b6ef70c7, type: 2}
+  _callScreen: {fileID: 2100000, guid: 7df1e13b794940f4a861c629401f46a7, type: 2}
 --- !u!114 &1042951461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5968,7 +5982,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 8
-  correctPhoneNumber: 0474265348
+  _smartphone: {fileID: 0}
+  _blackScreen: {fileID: 0}
+  _callScreen: {fileID: 0}
 --- !u!114 &1043364911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7282,7 +7298,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: -2
-  correctPhoneNumber: 0474265348
+  _smartphone: {fileID: 0}
+  _blackScreen: {fileID: 0}
+  _callScreen: {fileID: 0}
 --- !u!114 &1240201530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8715,7 +8733,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 7
-  correctPhoneNumber: 0474265348
+  _smartphone: {fileID: 0}
+  _blackScreen: {fileID: 0}
+  _callScreen: {fileID: 0}
 --- !u!114 &1683641125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8971,7 +8991,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 1
-  correctPhoneNumber: 0474265348
+  _smartphone: {fileID: 2120571087}
+  _blackScreen: {fileID: 2100000, guid: d4fc12dc9beafa44e9f614b7b6ef70c7, type: 2}
+  _callScreen: {fileID: 2100000, guid: 7df1e13b794940f4a861c629401f46a7, type: 2}
 --- !u!114 &1771344521
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9354,7 +9376,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   value: 5
-  correctPhoneNumber: 0474265348
+  _smartphone: {fileID: 0}
+  _blackScreen: {fileID: 0}
+  _callScreen: {fileID: 0}
 --- !u!114 &1801597975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10482,6 +10506,11 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42db2464346d91c47b812288879592f1, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &2120571087 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1191933010613832, guid: 42db2464346d91c47b812288879592f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 2120571086}
 --- !u!1001 &2134928152
 Prefab:
   m_ObjectHideFlags: 0
