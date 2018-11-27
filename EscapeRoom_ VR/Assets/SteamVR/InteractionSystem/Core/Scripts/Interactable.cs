@@ -31,14 +31,7 @@ namespace Valve.VR.InteractionSystem
 
         [Tooltip("The range of motion to set on the skeleton. None for no change.")]
         public SkeletalMotionRangeChange setRangeOfMotionOnPickup = SkeletalMotionRangeChange.None;
-
-        // Keypad values
-        public GameObject KeyPadButton;
-        public int KeyValue;
-        public GameObject KeyPadScreen;
-        private static string _codeTyped;
-        private readonly string _rightCode = "3940";
-
+        
         public delegate void OnAttachedToHandDelegate( Hand hand );
 		public delegate void OnDetachedFromHandDelegate( Hand hand );
 
@@ -251,45 +244,10 @@ namespace Valve.VR.InteractionSystem
 			}
             
             attachedToHand = hand;
-            Debug.Log("Midden van methode");
-                switch (KeyValue)
-                {
-                    case -1:
-                        _codeTyped = string.Empty;
-                        break;
-                    case -2:
-                        CheckIfCodeIsCorrect();
-                        break;
-                    default:
-                        _codeTyped += KeyValue;
-                        break;
-                }
-                UpdateKeyPadScreen();
-            Debug.Log("Keyvalue: " + KeyValue);
-        }
-
-        private void UpdateKeyPadScreen()
-        {
-            Debug.Log("Screen updating method");
-            var textMesh = KeyPadScreen.GetComponent<TextMesh>();
-            textMesh.text = _codeTyped;
-        }
-
-        private void CheckIfCodeIsCorrect()
-        {
-            Debug.Log("Entered: " + _codeTyped + " Expetected: " + _rightCode);
-            if (_rightCode.Equals(_codeTyped))
-            {
-                var cabinetDoor = GameObject.Find("cabinet_door_to_open");
-                cabinetDoor.transform.Rotate(0,90,0);
-            }
-            else
-            {
-                _codeTyped = string.Empty;
-                UpdateKeyPadScreen();
-            }
             
         }
+
+       
 
         private void OnDetachedFromHand( Hand hand )
         {
