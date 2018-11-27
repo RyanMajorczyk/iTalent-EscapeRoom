@@ -10,7 +10,21 @@ namespace Valve.VR.InteractionSystem.Sample
 
         private static string insertedPhoneNumber = "";
 
-        public string correctPhoneNumber = "0474265348";
+        //private string correctPhoneNumber = "0474265348";
+        private string correctPhoneNumber = "11";
+
+        public GameObject _smartphone;
+
+       private Renderer _renderer;
+
+        public Material _blackScreen;
+        public Material _callScreen;
+
+        void Start()
+        {
+            _renderer = _smartphone.GetComponent<Renderer>();
+            _renderer.materials[1] = _blackScreen;
+        }
 
         public void OnButtonDown(Hand fromHand)
         {
@@ -21,6 +35,7 @@ namespace Valve.VR.InteractionSystem.Sample
                     if (insertedPhoneNumber.Equals(correctPhoneNumber))
                     {
                         //Make phone call
+                        _renderer.materials[1] = _callScreen;
                     }
 
                 }
