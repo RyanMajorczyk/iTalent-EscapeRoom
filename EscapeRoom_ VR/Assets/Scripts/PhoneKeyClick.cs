@@ -15,18 +15,15 @@ namespace Valve.VR.InteractionSystem.Sample
 
         public GameObject _smartphone;
 
-        //private GUITexture _guiTexture;
-
-        private Renderer _renderer;
+       private Renderer _renderer;
 
         public Material _blackScreen;
         public Material _callScreen;
 
         void Start()
         {
-           // _guiTexture = _smartphone.GetComponent<GUITexture>();
             _renderer = _smartphone.GetComponent<Renderer>();
-            _renderer.material = _blackScreen;
+            _renderer.materials[1] = _blackScreen;
         }
 
         public void OnButtonDown(Hand fromHand)
@@ -38,8 +35,7 @@ namespace Valve.VR.InteractionSystem.Sample
                     if (insertedPhoneNumber.Equals(correctPhoneNumber))
                     {
                         //Make phone call
-                        //_guiTexture.texture.ma
-                        _renderer.material = _callScreen;
+                        _renderer.materials[1] = _callScreen;
                     }
 
                 }
