@@ -23,7 +23,10 @@ public class KeyPadButtonClicked : MonoBehaviour
                 CheckIfCodeIsCorrect();
                 break;
             default:
-                _codeTyped += KeyValue;
+                if(_codeTyped.Length <= 4)
+                {
+                    _codeTyped += KeyValue;
+                }
                 break;
         }
         UpdateKeyPadScreen();
@@ -48,7 +51,8 @@ public class KeyPadButtonClicked : MonoBehaviour
         if (_rightCode.Equals(_codeTyped))
         {
             var cabinetDoor = GameObject.Find("cabinet_door_to_open");
-            cabinetDoor.transform.Rotate(0, 90, 0);
+            cabinetDoor.transform.Rotate(-130, 0, 0);
+            cabinetDoor.transform.position += new Vector3(0, 0.4f, -0.175f);
         }
         else
         {
