@@ -15,7 +15,8 @@ namespace Valve.VR.InteractionSystem.Sample
 
         public GameObject _smartphone;
 
-       private Renderer _renderer;
+        private Renderer _renderer;
+        private AudioSource _ringtone;
 
         public Material _blackScreen;
         public Material _callScreen;
@@ -23,6 +24,7 @@ namespace Valve.VR.InteractionSystem.Sample
         void Start()
         {
             _renderer = _smartphone.GetComponent<Renderer>();
+            _ringtone = _smartphone.GetComponent<AudioSource>();
             Material material = _renderer.materials[1];
             Color finalValue = Color.black;
             //Color finalValue = Color.black * 0.1f;
@@ -42,6 +44,7 @@ namespace Valve.VR.InteractionSystem.Sample
                         Color finalValue = Color.white;
                         //Color finalValue = Color.white * 0.1f;
                         material.SetColor("_EmissionColor", finalValue);
+                        _ringtone.mute = false;
                     }
 
                 }
