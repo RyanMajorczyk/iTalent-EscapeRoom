@@ -23,7 +23,10 @@ namespace Valve.VR.InteractionSystem.Sample
         void Start()
         {
             _renderer = _smartphone.GetComponent<Renderer>();
-            _renderer.materials[1] = _blackScreen;
+            Material material = _renderer.materials[1];
+            Color finalValue = Color.black;
+            //Color finalValue = Color.black * 0.1f;
+            material.SetColor("_EmissionColor", finalValue);
         }
 
         public void OnButtonDown(Hand fromHand)
@@ -35,7 +38,10 @@ namespace Valve.VR.InteractionSystem.Sample
                     if (insertedPhoneNumber.Equals(correctPhoneNumber))
                     {
                         //Make phone call
-                        _renderer.materials[1] = _callScreen;
+                        Material material = _renderer.materials[1];
+                        Color finalValue = Color.white;
+                        //Color finalValue = Color.white * 0.1f;
+                        material.SetColor("_EmissionColor", finalValue);
                     }
 
                 }
