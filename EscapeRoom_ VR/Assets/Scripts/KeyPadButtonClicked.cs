@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -10,7 +11,9 @@ public class KeyPadButtonClicked : MonoBehaviour
     public int KeyValue;
     public GameObject KeyPadScreen;
     private static string _codeTyped;
-    private readonly string _rightCode = "3940";
+    private readonly string _rightCodeCabinet1 = "3940";
+    private readonly string _rightCodeCabinet2 = "3679";
+    private static Boolean _cabinet1IsOpened = false;
 
     public void OnButtonDown(Hand fromHand)
     {
@@ -49,9 +52,16 @@ public class KeyPadButtonClicked : MonoBehaviour
     private void CheckIfCodeIsCorrect()
     {
         Debug.Log("Opening cabinet");
-        if (_rightCode.Equals(_codeTyped))
+        if (_rightCodeCabinet1.Equals(_codeTyped))
         {
             var cabinetDoor = GameObject.Find("cabinet_door_to_open");
+            cabinetDoor.transform.Rotate(-130, 0, 0);
+            cabinetDoor.transform.position += new Vector3(0, 0.4f, -0.175f);
+            _cabinet1IsOpened = true;
+        }
+        else if (_cabinet1IsOpened && _rightCodeCabinet2.Equals(_codeTyped))
+        {
+            var cabinetDoor = GameObject.Find("cabinet_door_to_open_2");
             cabinetDoor.transform.Rotate(-130, 0, 0);
             cabinetDoor.transform.position += new Vector3(0, 0.4f, -0.175f);
         }
