@@ -11,7 +11,7 @@ public class KeyPadButtonClicked : MonoBehaviour
     public int KeyValue;
     public GameObject KeyPadScreen;
     private static string _codeTyped;
-    private readonly string _rightCodeCabinet1 = "1319";
+    private readonly string _rightCodeCabinet1 = "1369";
     private readonly string _rightCodeCabinet2 = "3679";
     private static Boolean _cabinet1IsOpened = false;
 
