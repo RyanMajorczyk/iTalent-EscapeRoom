@@ -849,6 +849,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.0064389994
       objectReference: {fileID: 0}
+    - target: {fileID: 155280, guid: 41d1cac196452694fb10f2476db79e6e, type: 2}
+      propertyPath: m_TagString
+      value: key
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41d1cac196452694fb10f2476db79e6e, type: 2}
   m_IsPrefabAsset: 0
@@ -6069,6 +6073,7 @@ GameObject:
   - component: {fileID: 1659631902}
   - component: {fileID: 1659631901}
   - component: {fileID: 1659631900}
+  - component: {fileID: 1659631904}
   m_Layer: 0
   m_Name: Lock
   m_TagString: Untagged
@@ -6143,6 +6148,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1659631904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1659631899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2641fb6a6ccc8fa4ca0d4c1ad787e4c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1724558108
 Prefab:
   m_ObjectHideFlags: 0
