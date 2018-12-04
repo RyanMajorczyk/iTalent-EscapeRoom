@@ -51,7 +51,7 @@ namespace Valve.VR.InteractionSystem.Sample
                     {
                         //Make phone call
                         //_material = _renderer.materials[1];
-                        _finalValue = Color.white * 2.0f;
+                        _finalValue = Color.white * 1.2f;
                         //_finalValue = Color.white * 0.1f;
                         _material.SetColor("_EmissionColor", _finalValue);
                         _ringtone.Play();
@@ -69,6 +69,7 @@ namespace Valve.VR.InteractionSystem.Sample
                     insertedPhoneNumber += value;
                     Debug.Log(insertedPhoneNumber);
                 }
+                GameObject.Find("Traditional Telephone").GetComponent<AudioSource>().Play();
                 Debug.Log("Button pressed " + value);
             }
             
