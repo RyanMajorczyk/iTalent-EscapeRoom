@@ -10,8 +10,8 @@ namespace Valve.VR.InteractionSystem.Sample
 
         private static string insertedPhoneNumber = "";
 
-        //private string correctPhoneNumber = "0474265348";
-        private string correctPhoneNumber = "11";
+        private string correctPhoneNumber = "1813";
+        //private string correctPhoneNumber = "11";
 
         public GameObject _smartphone;
 
