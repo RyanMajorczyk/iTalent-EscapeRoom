@@ -29,7 +29,7 @@ public class KeyPadButtonClicked : MonoBehaviour
                 }
                 break;
         }
-        GetComponent("KeyPad_1").GetComponent<AudioSource>().Play();
+        GameObject.Find("KeyPad_1").GetComponent<AudioSource>().Play();
         UpdateKeyPadScreen();
         Debug.Log("Keyvalue: " + KeyValue);
     }
