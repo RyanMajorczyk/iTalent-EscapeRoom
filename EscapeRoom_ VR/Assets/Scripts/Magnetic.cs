@@ -5,23 +5,21 @@ using UnityStandardAssets.Utility;
 
 public class Magnetic : MonoBehaviour {
 
+    private Transform target ;
+    private float distance = 0.5f;
+ 
+    private float heightDamping = 2.0f;
 
-    // The target we are following
-    public Transform target;
-    // The distance in the x-z plane to the target
-    public float distance = 0.5f;
-   
-    // How much we 
-    public float heightDamping = 2.0f;
-  
+    void Start()
+    {
+        GameObject gameObject = GameObject.FindGameObjectWithTag("Magnet");
+        target = gameObject.transform;
+    }
 
     void LateUpdate()
     {
-        // Early out if we don't have a target
         if (!target)
             return;
-
-        // Calculate the current rotation angles
        
         float wantedHeight = target.position.y;
         float currentHeight = transform.position.y;
@@ -30,10 +28,8 @@ public class Magnetic : MonoBehaviour {
         Vector3 vector3 = new Vector3(target.position.x + 0.1f, target.position.y, target.position.z);
         transform.position = vector3;
 
-        // Set the height of the camera
         transform.position = new Vector3(transform.position.x, currentHeight, transform.position.z);
 
-        // Always look at the target
         transform.LookAt(target);
     }
 }
