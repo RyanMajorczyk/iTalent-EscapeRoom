@@ -10,7 +10,7 @@ public class KeyPadButtonClicked : MonoBehaviour
     public int KeyValue;
     public GameObject KeyPadScreen;
     private static string _codeTyped;
-    private readonly string _rightCode = "3940";
+    private readonly string _rightCode = "1349";
 
     public void OnButtonDown(Hand fromHand)
     {
